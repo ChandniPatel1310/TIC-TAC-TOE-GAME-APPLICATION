@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="tic_tac_toe.css">
+	<script src="tic_tac_toe.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<h1>TIC TAC TOE</h1>
+
+		<!--Instructions -->
+		<p id="ins">Tap on box to starts the Game<br><br>
+            <b>Player X</b> is First Player<br>
+            And<br>
+           <b>Player 0</b> is Second Player 
+		</p>
+
+		<br><br>
+		<!-- 3*3 grid of Boxes -->
+		<input type="text" id="b1" onclick=
+			"myfunc_b1(); Check();" readonly>
+
+		<input type="text" id="b2" onclick=
+			"myfunc_b2(); myfunc();" readonly>
+
+		<input type="text" id="b3" onclick=
+			"myfunc_b3(); Check();" readonly>
+		<br><br>
+
+		<input type="text" id="b4" onclick=
+			"myfunc_b4(); Check();" readonly>
+			
+		<input type="text" id="b5" onclick=
+			"myfunc_b5(); Check();" readonly>
+
+		<input type="text" id="b6" onclick=
+			"myfunc_b6(); Check();" readonly>
+		<br><br>
+
+		<input type="text" id="b7" onclick=
+			"myfunc_b7(); Check();" readonly>
+
+		<input type="text" id="b8" onclick=
+			"myfunc_b8(); Check();" readonly>
+
+		<input type="text" id="b9" onclick=
+			"myfunc_b9(); Check();" readonly>
+		<br><br><br>
+
+		<button id="but" onclick="reset()">
+			RESET
+		</button>
+
+		<br>
+		<!-- Space to show player turn -->
+		<p id="print"></p>
+
+	</div>
+</body>
+
+</html>
